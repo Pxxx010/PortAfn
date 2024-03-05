@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root {   
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*height: 100vh; defenindo a altura da tela usando 100% da viewport, ou seja, açtura do viewport*/
+    box-sizing: box-sizing;/*faz com que as tags filhos (header, main, h1, img etc) não acabam saindo da tag pai que é o body */
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+   /* background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(1, 1, 128)); */
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight:600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    
+    opacity: 60%;
+}
+
+.apresentacao {
+    padding: 5% 15%; /*10% vertical, 15% horizontal*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}  
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex; /*tag display fica sempre na tag conteiner*/
+    flex-direction: column;
+    gap: 40px; /*gap é espaçamento entre os elementos filhos*/
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+}
+
+.titulo-destaque, .titulo-destaque2 {
+    color: var(--cor-terciaria);
+    opacity: 60%;
+}
+
+.titulo-destaque2:hover {
+    background-color: #22d5fd42;
+    transition: 1.1s;
+
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /*centralizou verticalmente os itens nesse caso*/
+    gap: 30px; /*espaçamento entre itens*/
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600; /*peso da fonte*/
+    padding: 21.5px 0; /*primeiro valor eixo vertial, segundo valor eixo horizontal*/
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__navegacao:hover {
+    transition: 1.1s;
+    background-color: var(--cor-hover);
+    cursor: pointer;
+}
+
+.rodape {
+    padding: 10px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Fotus {
+    width: 50%;
+    border-radius: 1rem;
+    margin-bottom: 38%
+;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
+
+ /* Config LoadScreen */
+
+#bodyload{
+ background-color: #EBF2F5;
+ overflow: hidden;
+ text-align: center;
+}
+
+body,
+html {
+ height: 100%;
+ width: 100%;
+ margin: 0;
+ padding: 0;
+}
+
+#animationWindow {
+ width: 100%;
+ height: 100%;
+}
+
+/* .grid-container {
+    align-items: center; 
+     margin: 0 25%; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 50px;
+    
+}
+
+.grid-container > div {
+    /* background-image: url("../assets/an.png"); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 5px;
+    opacity: 90%;
+    text-align:center;
+    justify-content: center;
+    width: 320px;
+    height: 320px;
+    font-size: 30px;
+    display: flex;
+    font-style: var(--fonte-secundaria);    
+  }
+
+.grid-container > div:first-child {
+    background-color: #22D4FD;
+}
+
+.grid-container >div:nth-child(4){
+    background-image: url("/assets/hacker.png");
+} */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.container{
+    background-color: black;
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+
+.heading{ 
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+
+}
+.container{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.container .box-container .box img{
+    height: 80px;
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
